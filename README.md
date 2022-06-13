@@ -12,7 +12,7 @@
 11. Paste your request
 12. Press **Execute**
 13. Alternatively, you may try curl
-```aidl
+```
 curl -X 'POST' \
   'http://localhost:7070/program' \
   -H 'accept: application/json' \
