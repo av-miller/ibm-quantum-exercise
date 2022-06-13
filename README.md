@@ -7,7 +7,7 @@
 6. Update `.env` file in the project root with URL to Acme and Madrid instrument service endpoints for your system
 7. Start up Fast API: `python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 7070`
 8. Navigate to http://localhost:7070/docs
-9. Open POST /program
+9. Open **POST /program** section
 10. Click **Try it out** button
 11. Paste your request
 12. Press **Execute**
