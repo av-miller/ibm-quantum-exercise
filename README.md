@@ -38,16 +38,6 @@ curl -X 'POST' \
 }'
 ```
 
-# Findings
-* Values are integers (including negative) 
-  * Confirmed with requests to Acme and Madrid services
-  * Confirmed by code inspection in Acme and Madrid services repositories
-* Paths to load and run endpoints are not the same between Acme and Madrid
-  * Confirmed by inspecting OpenAPI documentation for these services
-* Madrid Service was not runnable on my system without changes
-  * I had to optimize imports to fix it
-  * Please see below ![Screenshot from 2022-06-12 11-56-49.png](Screenshot from 2022-06-12 11-56-49.png)
-
 # Design decisions
 * Used Abstract Base Classes (ABCs) in order to support extending system to other types of instruments
 * Used a generic Rest API instrument service client as both existing clients follow the same format
@@ -59,3 +49,15 @@ curl -X 'POST' \
 * Went minimal on error handling and validation as instructed
 * Assumed that programs will always be simple sets of instructions
   * Reality is harsher though and this is obviously an oversimplification
+
+# Findings
+* Values are integers (including negative) 
+  * Confirmed with requests to Acme and Madrid services
+  * Confirmed by code inspection in Acme and Madrid services repositories
+* Paths to load and run endpoints are not the same between Acme and Madrid
+  * Confirmed by inspecting OpenAPI documentation for these services
+* Madrid Service was not runnable on my system without changes
+  * I had to optimize imports to fix it
+  * Please see below ![Screenshot from 2022-06-12 11-56-49.png](https://github.com/av-miller/ibm-quantum-exercise/blob/master/Screenshot%20from%202022-06-12%2011-56-49.png?raw=true)
+
+
